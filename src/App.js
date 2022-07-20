@@ -14,7 +14,7 @@ import Contact from "./components/contact/contact";
 
 function App() {
   return (
-      <div className="App__main-page-content">
+      <div className="main-page">
           <Routes>
               <Route index path="/" element={<Home />} />
               <Route path="/about" element={<AboutMe />} />
