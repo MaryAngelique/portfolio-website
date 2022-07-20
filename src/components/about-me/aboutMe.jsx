@@ -43,7 +43,7 @@ const AboutMe = () => {
                         Linked
                     </a>
                 </h3>
-
+ 
                 <h3>
                     <span className="personal-info-span">
                         GitHub
