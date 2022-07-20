@@ -75,4 +75,20 @@ export const skillsData = [
             },
         ]
     },
+
+    // Deployment
+    {
+        type: "Deployment",
+        data: [
+            {
+                name: "Heroku"
+            },
+            {
+                name: "Vercel"
+            },
+            {
+                name: "Netlify"
+            },
+        ]
+    },
 ]
