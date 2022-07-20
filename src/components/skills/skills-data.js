@@ -1,5 +1,5 @@
 export const skillsData = [
-    // FrotnEnd Skills
+    // FrontEnd Skills
     {
         type: "FrontEnd",
         data: [
@@ -88,6 +88,37 @@ export const skillsData = [
             },
             {
                 name: "Netlify"
+            },
+        ]
+    },
+
+    // Additional Skills
+    {
+        type: "Additional Skills",
+        data: [
+            {
+                name: "Agile Project Management"
+            },
+            {
+                name: "Algorithms"
+            },
+            {
+                name: "Architecture"
+            },
+            {
+                name: "Debugging"
+            },
+            {
+                name: "Deployment"
+            },
+            {
+                name: "Troubleshooting"
+            },
+            {
+                name: "Unit Testing"
+            },
+            {
+                name: "Integration Testing"
             },
         ]
     },
