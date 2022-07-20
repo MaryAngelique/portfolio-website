@@ -4,7 +4,6 @@ import {
     Route 
 } from "react-router-dom";
 
-import Navigation from "./components/navigation/navigation";
 import Home from "./components/home/home";
 import AboutMe from "./components/about-me/aboutMe";
 import Skills from "./components/skills/skill";
@@ -13,13 +12,15 @@ import Contact from "./components/contact/contact";
 
 function App() {
   return (
-    <div>
-      <div className="portfolio-website">
-        <Routes>
-          <Route index path="/" element={<Navigation />} />
-        </Routes>
+      <div className="App__main-page-content">
+          <Routes>
+              <Route index path="/" element={<Home />} />
+              <Route path="/about" element={<AboutMe />} />
+              <Route path="/skills" element={<Skills />} />
+              <Route path="/projects" element={<Projects />} />
+              <Route path="/contact" element={<Contact />} />
+          </Routes>
       </div>
-    </div>
   );
 }
 
