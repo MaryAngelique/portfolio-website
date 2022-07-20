@@ -44,4 +44,35 @@ export const skillsData = [
             },
         ]
     },
+
+    // BackEnd Skills
+    {
+        type: "BackEnd",
+        data: [
+            {
+                name: "Node.js"
+            },
+            {
+                name: "SQL"
+            },
+            {
+                name: "PostgreSQL"
+            },
+            {
+                name: "Express"
+            },
+            {
+                name: "Knex"
+            },
+            {
+                name: "Python"
+            },
+            {
+                name: "Git CLI"
+            },
+            {
+                name: "Heroku CLI"
+            },
+        ]
+    },
 ]
