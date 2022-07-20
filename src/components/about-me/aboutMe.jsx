@@ -39,7 +39,7 @@ const AboutMe = () => {
                     <span className="personal-info-span">
                         LinkedIn
                     </span>
-                    <a className="personal-info-link" href="https://www.linkedin.com/in/mary-angelique-abacajan/" target="_blank" rel="noreferrer">
+                    <a className="personal-info-link" href="https://www.linkedin.com/in/mary-angelique-abacajan/" target="_blank" rel="noopener noreferrer">
                         Linked
                     </a>
                 </h3>
@@ -48,7 +48,7 @@ const AboutMe = () => {
                     <span className="personal-info-span">
                         GitHub
                     </span>
-                    <a className="personal-info-link" href="https://github.com/MaryAngelique" target="_blank" rel="noreferrer">
+                    <a className="personal-info-link" href="https://github.com/MaryAngelique" target="_blank" rel="noopener noreferrer">
                         GitHub
                     </a>
                 </h3>
