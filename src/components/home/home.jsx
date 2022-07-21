@@ -3,7 +3,8 @@ import Typical from "react-typical";
 
 import Navigation from "../navigation/navigation";
 
-import "./home.scss"
+import { ReactComponent as Angelique } from "../../assets/Angelique.svg";
+
 
 const Home = () => {
 
@@ -27,7 +28,7 @@ const Home = () => {
             </div>
 
             <div className="home-image">
-                        
+                <Angelique/>
             </div>
         </div>
     );
