@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 // Filter Projects Data
 const filterData = [
@@ -51,6 +51,9 @@ const projectsData = [
 ];
 
 const Projects = () => {
+    const [filterState, setfilterState] = useState(1);
+    const [hoverState, sethoverState] = useState(null);
+
     return(
         <div>
             <h1>Contact</h1>
