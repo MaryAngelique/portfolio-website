@@ -13,9 +13,9 @@ const Home = () => {
                         loop={Infinity}
                         wrapper="b"
                         steps={[
-                            "FullStack Web Developer 🛠", 1000,
-                            "FrontEnd Developer 🖌", 1000,
-                            "BackEnd Developer 🖥", 1000,
+                            "FullStack Web Developer 🛠", 2000,
+                            "FrontEnd Developer 🖌", 2000,
+                            "BackEnd Developer 🖥", 2000,
                         ]}
                     />
                 </h3>
