@@ -4,9 +4,16 @@ import { skillsData } from "./skills-data";
 
 const Skills = () => {
     return(
-        <div>
-            <h1>My Skills</h1>
-            .
+        <div className="skills">
+            <div className="skills-content">
+                {skillsData.map((item, i) => (
+                    <div key={i} className="skills-content-">
+                        <h3 className="skills-content-category-text">
+                            {item.type}
+                        </h3>
+                    </div>
+                ))}
+            </div>
         </div>
     );
 }
