@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import { Link } from "react-router-dom"
 
-import Logo from "../../assets/MA.png"
+import { ReactComponent as Logo } from "../../assets/MA.svg"
 
 const Navigation = () => {
 
