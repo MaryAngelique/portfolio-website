@@ -19,32 +19,32 @@ const filterData = [
 // Projects Data
 const projectsData = [
     {
-        projectId: 2,
-        name: "Ecommerce",
+        projectId: 1,
+        name: "Halo Clothing",
         image: "",
         link: "",
     },
     {
-        projectId: 3,
-        name: "Notes App",
-        link: "",
-        image: "",
-    },
-    {
-        projectId: 2,
-        name: "Supplier Design",
-        image: "",
-        link: "",
-    },
-    {
-        projectId: 2,
+        projectId: 1,
         name: "Todo App",
+        link: "",
+        image: "",
+    },
+    {
+        projectId: 2,
+        name: "African Marketplace",
         image: "",
         link: "",
     },
     {
         projectId: 3,
-        name: "Shopping cart design",
+        name: "Potluck Planner",
+        image: "",
+        link: "",
+    },
+    {
+        projectId: 2,
+        name: "CoderHeroes",
         image: "",
         link: "",
     },
