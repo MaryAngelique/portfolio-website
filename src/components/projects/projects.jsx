@@ -1,5 +1,6 @@
 import React from "react";
 
+// Filter Projects Data
 const filterData = [
     {
         filterId: 1,
@@ -12,6 +13,40 @@ const filterData = [
     {
         filterId: 3,
         label: "BackEnd",
+    },
+];
+
+// Projects Data
+const projectsData = [
+    {
+        projectId: 2,
+        name: "Ecommerce",
+        image: "",
+        link: "",
+    },
+    {
+        projectId: 3,
+        name: "Notes App",
+        link: "",
+        image: "",
+    },
+    {
+        projectId: 2,
+        name: "Supplier Design",
+        image: "",
+        link: "",
+    },
+    {
+        projectId: 2,
+        name: "Todo App",
+        image: "",
+        link: "",
+    },
+    {
+        projectId: 3,
+        name: "Shopping cart design",
+        image: "",
+        link: "",
     },
 ];
 
