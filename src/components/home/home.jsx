@@ -1,12 +1,17 @@
 import React from "react";
 import Typical from "react-typical";
 
+import Navigation from "../navigation/navigation";
+
+import "./home.scss"
+
 const Home = () => {
 
     return(
-        <div>
+        <div className="home">
+            <Navigation/>
             <div className="home-title">
-                <h2>Hi, I'm <span className="home-name">Angelique 👩🏻‍💻</span></h2>
+                <h2>Hi, I'm <span className="home-name">Angelique <span role="img" aria-label="girl in a computer">👩🏻‍💻</span></span></h2>
 
                 <h3>
                     <Typical
@@ -19,6 +24,10 @@ const Home = () => {
                         ]}
                     />
                 </h3>
+            </div>
+
+            <div className="home-image">
+                        
             </div>
         </div>
     );
