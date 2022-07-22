@@ -87,6 +87,8 @@ const Projects = () => {
                     <div
                         className="projects-content-project"
                         key={`cardItem${item.name.trim()}`}
+                        onMouseEnter={() => handleHover(index)}
+                        onMouseLeave={() => handleHover(null)}
                     >
                         <div className="projects-content-project-image">
                             <a>
