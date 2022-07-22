@@ -55,10 +55,18 @@ const Projects = () => {
     const [hoverState, sethoverState] = useState(null);
 
     return(
-        <div>
-            <h1>Contact</h1>
-            <h1>Let's chat</h1>
-        </div>
+        <div className="projects-content">
+            <ul className="projects-content-filter">
+                {filterData.map((item) => (
+                    <li
+                        className={item.filterId === filterState ? "active" : ""}
+                        key={item.filterId}
+                    >
+                        {item.label}
+                    </li>
+                ))}
+            </ul>
+      </div>
     );
 }
 
