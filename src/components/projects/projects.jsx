@@ -1,3 +1,4 @@
+import { hover } from "@testing-library/user-event/dist/hover";
 import React, { useState } from "react";
 
 // Filter Projects Data
@@ -54,18 +55,56 @@ const Projects = () => {
     const [filterState, setfilterState] = useState(1);
     const [hoverState, sethoverState] = useState(null);
 
+    function handleFilter(currentId) {
+        setfilterState(currentId);
+    }
+
+    function handleHover(index) {
+        sethoverState(index);
+    }
+
+    const filterItems =
+        filterState === 1
+            ? projectsData
+            : projectsData.filter((item) => item.id === filterState);
+ 
     return(
         <div className="projects-content">
             <ul className="projects-content-filter">
                 {filterData.map((item) => (
                     <li
                         className={item.filterId === filterState ? "active" : ""}
+                        onClick={() => handleFilter(item.filterId)}
                         key={item.filterId}
                     >
                         {item.label}
                     </li>
                 ))}
             </ul>
+
+            <div className="projects-content">
+                {filterItems.map((item, index) => (
+                    <div
+                        className="projects-content-project"
+                        key={`cardItem${item.name.trim()}`}
+                    >
+                        <div className="projects-content-project-image">
+                            <a>
+                                <img alt="data" src={item.image} />
+                            </a>
+                        </div>
+
+                        <div className="hover">
+                            {index === hoverState && (
+                                <div>
+                                    <p>{item.name}</p>
+                                    <button>Go to Project</button>
+                                </div>
+                            )}
+                        </div>
+                    </div>
+                ))}
+            </div>
       </div>
     );
 }
