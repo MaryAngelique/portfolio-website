@@ -1,0 +1,27 @@
+.navigation-container {
+    background-color: #292826;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+}
+
+.navigation-links {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: inherit;
+    padding: 0px 20px;
+    flex: 1;
+    
+    .navigation-links-item {
+        display: flex;
+        list-style: none;
+        text-align: center;
+        line-height: 40px;
+        margin-right: 1.5rem;
+        font-size: 1.6rem;
+    }
+}

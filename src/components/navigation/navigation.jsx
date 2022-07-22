@@ -18,23 +18,23 @@ const Navigation = () => {
 
                 {/* Navigation List */}
                 <div className="navigation-links">
-                    <Link className="navigation-links">
+                    <Link className="navigation-links-item">
                         HOME
                     </Link>
 
-                    <Link className="navigation-links">
+                    <Link className="navigation-links-item">
                         ABOUT ME
                     </Link>
 
-                    <Link className="navigation-links">
+                    <Link className="navigation-links-item">
                         SKILLS
                     </Link>
 
-                    <Link className="navigation-links">
+                    <Link className="navigation-links-item">
                         PROJECTS
                     </Link>
 
-                    <Link className="navigation-links">
+                    <Link className="navigation-links-item">
                         CONTACT
                     </Link>
                 </div>
