@@ -4,7 +4,7 @@ import Navigation from "../navigation/navigation";
 
 const AboutMe = () => {
     return(
-        <div>
+        <div className="about-me">
             <Navigation/>
             <h1>About Me</h1>
 
