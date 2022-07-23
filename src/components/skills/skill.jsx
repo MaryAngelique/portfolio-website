@@ -5,10 +5,10 @@ import { skillsData } from "./skills-data";
 const Skills = () => {
     return(
         <div className="skills">
-            <div className="skills-content">
+            <div className="skills-content-container">
                 {skillsData.map((item, i) => (
-                    <div key={i} className="skills-content-">
-                        <h3 className="skills-content-category-text">
+                    <div key={i} className="skills-content">
+                        <h3 className="skills-content-text">
                             {item.type}
                         </h3>
                     </div>
