@@ -2,8 +2,6 @@ import React from "react";
 
 import { skillsData } from "./skills-data";
 
-import "./skills.scss";
-
 const Skills = () => {
     return(
         <div className="skills">
