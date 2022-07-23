@@ -1,0 +1,27 @@
+.skills {
+    .skills-content-container {
+        display: flex;
+        padding: 20px;
+        gap: 20px;
+
+        .skills-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .skills-content-text {
+                display: inline-block;
+                color: #f9d342;
+                font-size: 22px;
+                font-weight: 700;
+                line-height: 1rem;
+                letter-spacing: 0.5px;
+                position: relative;
+                text-transform: uppercase;
+                padding: 5px 10px;
+                border-bottom: 2px solid var(--yellow-theme-main-color);
+            }
+        }
+    }
+}
