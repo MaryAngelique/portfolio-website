@@ -8,10 +8,10 @@ export const NavigationContainer = styled.div`
     align-items: center;
     font-size: 1.2rem;
     position: sticky;
+`;
 
-    .navigation-logo-container {
-        cursor: pointer;
-        height: 250px;
-        width: 250px;
-    }
+export const NavigationLogo = styled.div`
+    cursor: pointer;
+    height: 250px;
+    width: 250px;
 `;
