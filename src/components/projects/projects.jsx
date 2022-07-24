@@ -1,5 +1,9 @@
 import React, { useState } from "react";
 
+import {
+    ProjectsContainer
+} from "./styles";
+
 // Filter Projects Data
 const filterData = [
     {
@@ -68,7 +72,7 @@ const Projects = () => {
             : projectsData.filter((item) => item.id === filterState);
  
     return(
-        <div className="projects-content">
+        <ProjectsContainer>
             <ul className="projects-content-filter">
                 {filterData.map((item) => (
                     <li
@@ -81,7 +85,7 @@ const Projects = () => {
                 ))}
             </ul>
 
-            <div className="projects-content">
+            <ProjectsContent>
                 {filterItems.map((item, index) => (
                     <div
                         className="projects-content-project"
@@ -105,8 +109,8 @@ const Projects = () => {
                         </div>
                     </div>
                 ))}
-            </div>
-      </div>
+            </ProjectsContent>
+      </ProjectsContainer>
     );
 }
 
