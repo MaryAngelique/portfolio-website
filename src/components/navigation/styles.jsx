@@ -15,3 +15,12 @@ export const NavigationLogo = styled.div`
     height: 250px;
     width: 250px;
 `;
+
+export const NavigationLinks = styled.div`
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: inherit;
+    padding: 0px 20px;
+    flex: 1;
+`;
