@@ -31,3 +31,23 @@ export const PersonalInfo = styled.div`
         color: #ffe67c;
     }
 `;
+
+export const DeveloperDescription = styled.div`
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    
+    h2 {
+        color: #f9d342;
+        font-size: 1.3rem;
+        padding-bottom: 20px;
+        border-bottom: 1px dashed #f9d342;
+    }
+
+    p {
+        color: #ffe67c;
+        font-size: 1rem;
+        line-height: 1.65;
+    }
+`;
