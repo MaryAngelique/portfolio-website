@@ -1,4 +1,4 @@
-import "styled-components";
+import styled, { css } from "styled-components";
 
 export const HomeContainer = styled.div `
     position: relative;
@@ -7,16 +7,25 @@ export const HomeContainer = styled.div `
     justify-content: center;
     align-content: center;
     flex-direction: column;
+`;
 
-        h1 {
-            color: #f9d342;
-            margin: 0px;
-            font-weight: 500;
-            font-size: 8rem;
-            line-height: 10rem;
-            position: relative;
-            overflow: hidden;
-            white-space: nowrap;
-            animation: typingEffectAnimation 2.5s steps(20, end);
-        }
+export const HomeTitle = styled.div `
+    color: #f9d342;
+    margin: 0px;
+    font-size: 8rem;
+    line-height: 10rem;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+
+    h3 {
+        color: #f9d342;
+        margin: 0px;
+        font-weight: 500;
+        font-size: 8rem;
+        line-height: 10rem;
+        position: relative;
+        overflow: hidden;
+        white-space: nowrap;
+    }
 `;
