@@ -7,6 +7,7 @@ import { ReactComponent as Angelique } from "../../assets/Angelique.svg";
 
 import {
     HomeContainer, 
+    HomeImage, 
     HomeTitle,
 } from "./home-styles";
 
@@ -32,9 +33,9 @@ const Home = () => {
                 </h3>
             </HomeTitle>
 
-            <div className="home-image">
+            <HomeImage>
                 <Angelique/>
-            </div>
+            </HomeImage>
         </HomeContainer>
     );
 }
