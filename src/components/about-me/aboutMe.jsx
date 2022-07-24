@@ -2,14 +2,20 @@ import React from "react";
 
 import Navigation from "../navigation/navigation";
 
+import { 
+    AboutMeContainer, 
+    DeveloperDescription,
+    PersonalInfo,
+} from "./styles";
+
 const AboutMe = () => {
     return(
-        <div className="about-me">
+        <AboutMeContainer>
             <Navigation/>
             <h1>About Me</h1>
 
             {/* Personal information */}
-            <div className="personal-info">
+            <PersonalInfo>
                 <h2 className="info-title">
                     Personal information
                 </h2>
@@ -52,10 +58,10 @@ const AboutMe = () => {
                         GitHub
                     </a>
                 </h3>
-            </div>
+            </PersonalInfo>
 
             {/* FullStack Web Developer */}
-            <div className="dev-description">
+            <DeveloperDescription>
                 <h2 className="info-title">
                     FullStack Web Developer
                 </h2>
@@ -67,8 +73,8 @@ const AboutMe = () => {
                     
                     I chose this career field to help and develop websites that are accessible. One day, I would like to build a website of a library that is full of educational resources for teachers and students to help the future generations equipped with knowledge and resources they need right on their finger tips. I also want to pursue my passion in design by creating websites that are aesthetic to see and also accessible for a wide range of users.
                 </p>
-            </div>
-        </div>
+            </DeveloperDescription>
+        </AboutMeContainer>
     );
 }
 
