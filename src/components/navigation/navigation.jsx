@@ -4,7 +4,9 @@ import { Link } from "react-router-dom"
 import { ReactComponent as Logo } from "../../assets/MA.svg"
 
 import { 
-    NavigationContainer,
+    NavigationContainer, 
+    NavigationLinks, 
+    NavigationLogo,
 } from "./styles";
 
 const Navigation = () => {
@@ -14,14 +16,14 @@ const Navigation = () => {
             <nav className="navigation-container">
 
                 {/* Navigation Logo */}
-                <div className="navigation-logo">
+                <NavigationLogo>
                     <Link to={"/"} className="navigation-logo-container">
                         <Logo />
                     </Link>
-                </div>
+                </NavigationLogo>
 
                 {/* Navigation List */}
-                <div className="navigation-links">
+                <NavigationLinks>
                     <Link className="navigation-links-item">
                         HOME
                     </Link>
@@ -41,7 +43,7 @@ const Navigation = () => {
                     <Link className="navigation-links-item">
                         CONTACT
                     </Link>
-                </div>
+                </NavigationLinks>
             </nav>
             
         </NavigationContainer>
