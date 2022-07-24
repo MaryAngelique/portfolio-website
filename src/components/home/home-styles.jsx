@@ -29,3 +29,8 @@ export const HomeTitle = styled.div `
         white-space: nowrap;
     }
 `;
+
+export const HomeImage = styled.div`
+    width: 150px;
+    height: 150px;
+`;
