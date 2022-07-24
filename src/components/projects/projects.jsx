@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 
 import {
-    ProjectsContainer
+    ProjectsContainer,
+    ProjectsContent
 } from "./styles";
 
 // Filter Projects Data
