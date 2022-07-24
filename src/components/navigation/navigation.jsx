@@ -1,12 +1,16 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { Link } from "react-router-dom"
 
 import { ReactComponent as Logo } from "../../assets/MA.svg"
 
+import { 
+    NavigationContainer,
+} from "./styles";
+
 const Navigation = () => {
 
     return (
-        <Fragment>
+        <NavigationContainer>
             <nav className="navigation-container">
 
                 {/* Navigation Logo */}
@@ -40,7 +44,7 @@ const Navigation = () => {
                 </div>
             </nav>
             
-        </Fragment>
+        </NavigationContainer>
     );
 }
 
