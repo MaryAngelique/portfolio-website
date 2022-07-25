@@ -18,7 +18,7 @@ const Navigation = () => {
                 {/* Navigation Logo */}
                 <NavigationLogo>
                     <Link to="/">
-                        <Logo />
+                        <Logo size={30}/>
                     </Link>
                 </NavigationLogo>
 
