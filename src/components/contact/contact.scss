@@ -7,20 +7,55 @@
     margin: 0;
 
     .contact-content {
-
+        padding: 20px;
     }
 
     h3 {
-
+        margin-bottom: 10px;
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #f9d342;
     }
     .contact-form-container {
+        margin-top: 30px;
+        position: relative;
 
         .contact-form {
+            width: 100%;
+            border: 2px solid var(--yellow-theme-main-color);
+            padding: 16px 12px;
+            transition: all 0.5s ease;
+            position: relative;
+            background-color: transparent;
+            color: var(--yellow-theme-sub-text-color);
 
+            .nameLabel,
+            .emailLabel,
+            .descriptionLabel{
+                font-weight: 500;
+                position: absolute;
+                top: 7px;
+                left: 12px;
+                transition: all 0.2s ease;
+                color: var(--yellow-theme-sub-text-color);
+                font-size: 16px;
+            }
         }
     }
 
     button {
+        cursor: pointer;
+        padding: 10px 70px;
+        font-size: 2rem;
+        background: transparent;
+        color: var(--yellow-theme-main-color);
+        border: 1.5px solid var(--yellow-theme-main-color);
+        border-radius: 4px;
+        font-weight: 500;
 
+        hover{
+            color: #000;
+            background: var(--yellow-theme-main-color);
+        }
     }
 }
