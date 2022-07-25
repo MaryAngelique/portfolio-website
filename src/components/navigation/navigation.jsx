@@ -17,30 +17,30 @@ const Navigation = () => {
 
                 {/* Navigation Logo */}
                 <NavigationLogo>
-                    <Link to={"/"} className="navigation-logo-container">
+                    <Link to="/">
                         <Logo />
                     </Link>
                 </NavigationLogo>
 
                 {/* Navigation List */}
                 <NavigationLinks>
-                    <Link className="navigation-links-item">
+                    <Link className="navigation-links-item" to="/home">
                         HOME
                     </Link>
 
-                    <Link className="navigation-links-item">
+                    <Link className="navigation-links-item" to="/about">
                         ABOUT ME
                     </Link>
 
-                    <Link className="navigation-links-item">
+                    <Link className="navigation-links-item" to="/skills">
                         SKILLS
                     </Link>
 
-                    <Link className="navigation-links-item">
+                    <Link className="navigation-links-item" to="/projects">
                         PROJECTS
                     </Link>
 
-                    <Link className="navigation-links-item">
+                    <Link className="navigation-links-item" to="/contact">
                         CONTACT
                     </Link>
                 </NavigationLinks>

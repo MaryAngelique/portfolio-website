@@ -2,7 +2,6 @@ import React from "react";
 
 import "./App.css";
 import {
-    BrowserRouter as Router,
     Routes, 
     Route,
 } from "react-router-dom";
@@ -15,7 +14,6 @@ import Contact from "./components/contact/contact";
 
 function App() {
   return (
-      <Router>
           <Routes>
               <Route  path="/" element={<Home />} />
               <Route path="/about" element={<AboutMe />} />
@@ -23,8 +21,7 @@ function App() {
               <Route path="/projects" element={<Projects />} />
               <Route path="/contact" element={<Contact />} />
           </Routes>
-      </Router>
-  );
+   );
 }
 
 export default App;
