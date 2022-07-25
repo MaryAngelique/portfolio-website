@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 
 export const NavigationContainer = styled.div`
-    background-color: #292826;
+    background-color: #f9d342;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -12,11 +12,12 @@ export const NavigationContainer = styled.div`
 
 export const NavigationLogo = styled.div`
     cursor: pointer;
-    height: 250px;
-    width: 250px;
+    height: 10px;
+    width: 10px;
 `;
 
 export const NavigationLinks = styled.div`
+    color: #292826;
     display: flex;
     align-items: center;
     width: 100%;

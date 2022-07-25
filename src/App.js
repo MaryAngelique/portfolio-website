@@ -14,13 +14,13 @@ import Contact from "./components/contact/contact";
 
 function App() {
   return (
-          <Routes>
-              <Route  path="/" element={<Home />} />
-              <Route path="/about" element={<AboutMe />} />
-              <Route path="/skills" element={<Skills />} />
-              <Route path="/projects" element={<Projects />} />
-              <Route path="/contact" element={<Contact />} />
-          </Routes>
+        <Routes>
+            <Route  path="/" element={<Home />} />
+            <Route path="/about" element={<AboutMe />} />
+            <Route path="/skills" element={<Skills />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/contact" element={<Contact />} />
+        </Routes>
    );
 }
 
