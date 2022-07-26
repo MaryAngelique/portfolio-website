@@ -6,7 +6,7 @@ export const AboutMeContainer = styled.div`
     width: 100%;
     justify-content: space-evenly;
     align-content: center;
-`;
+`; 
 
 export const PersonalInfo = styled.div`
     display: flex;
