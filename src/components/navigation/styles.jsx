@@ -17,6 +17,11 @@ export const NavigationContainer = styled.div`
 export const NavigationLogo = styled.div`
     cursor: pointer;
     padding: 5px;
+
+    @media screen and (max-width: 800px) {
+        width: 50px;
+        padding: 0px;
+    }
 `;
 
 export const NavigationLinks = styled.div`
@@ -27,9 +32,17 @@ export const NavigationLinks = styled.div`
     height: inherit;
     padding: 0px 20px;
     flex: 1;
+
+    @media screen and (max-width: 800px) {
+        width: 80%;
+    }
 `;
 
 export const NavLinks = styled.div`
     padding: 10px 15px;
     cursor: pointer;
+
+    @media screen and (max-width: 800px) {
+        width: 80%;
+    }
 `;

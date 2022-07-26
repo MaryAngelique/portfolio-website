@@ -9,7 +9,7 @@ import {
     HomeContainer, 
     HomeImage, 
     HomeTitle,
-} from "./home-styles";
+} from "./styles";
 
 
 const Home = () => {
