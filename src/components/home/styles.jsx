@@ -3,10 +3,8 @@ import styled, { css } from "styled-components";
 export const HomeContainer = styled.div `
     position: relative;
     height: 100%;
-    display: flex;
     justify-content: center;
     align-content: center;
-    flex-direction: column;
 `;
 
 export const HomeTitle = styled.div `
