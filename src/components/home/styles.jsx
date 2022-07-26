@@ -11,9 +11,10 @@ export const HomeContainer = styled.div `
 
 export const HomeTitle = styled.div `
     color: #f9d342;
+    justify-content: center;
     margin: 0px;
-    font-size: 8rem;
-    line-height: 10rem;
+    font-size: 3rem;
+    line-height: 5rem;
     position: relative;
     overflow: hidden;
     white-space: nowrap;
@@ -22,8 +23,8 @@ export const HomeTitle = styled.div `
         color: #f9d342;
         margin: 0px;
         font-weight: 500;
-        font-size: 8rem;
-        line-height: 10rem;
+        font-size: 2.4rem;
+        line-height: 5rem;
         position: relative;
         overflow: hidden;
         white-space: nowrap;
