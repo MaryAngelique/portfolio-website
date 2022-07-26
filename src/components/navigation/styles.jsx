@@ -1,19 +1,16 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom"
 
 export const NavigationContainer = styled.div`
     background-color: #f9d342;
-    height: 70px;
+    height: 130px;
     width: 100%;
     display: flex;
     justify-content: space-between;
 `;
 
-export const NavigationLogo = styled(Link)`
+export const NavigationLogo = styled.div`
     cursor: pointer;
-    height: 100%;
-    width: 70px;
-    padding: 15px;
+    padding: 5px;
 `;
 
 export const NavigationLinks = styled.div`
@@ -24,4 +21,13 @@ export const NavigationLinks = styled.div`
     height: inherit;
     padding: 0px 20px;
     flex: 1;
+
+    Link {
+        display: flex;
+        list-style: none;
+        text-align: center;
+        line-height: 40px;
+        margin-right: 1.5rem;
+        font-size: 1.6rem;
+    }
 `;
