@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom"
+import React, { Fragment } from "react";
+import { Outlet } from "react-router-dom"
 
 import { ReactComponent as Logo } from "../../assets/MA.svg"
 
@@ -7,46 +7,43 @@ import {
     NavigationContainer, 
     NavigationLinks, 
     NavigationLogo,
+    NavLinks
 } from "./styles";
 
 const Navigation = () => {
 
     return (
-        <NavigationContainer>
-            <nav className="navigation-container">
-
-                {/* Navigation Logo */}
-                <NavigationLogo>
-                    <Link to="/">
-                        <Logo size={30}/>
-                    </Link>
+        <Fragment>
+            <NavigationContainer>
+                <NavigationLogo to="/">
+                    <Logo />
                 </NavigationLogo>
-
-                {/* Navigation List */}
-                <NavigationLinks>
-                    <Link className="navigation-links-item" to="/home">
+                
+                <NavigationLinks>          
+                    <NavLinks className="nav-links" to="/home">
                         HOME
-                    </Link>
+                    </NavLinks>
 
-                    <Link className="navigation-links-item" to="/about">
+                    <NavLinks className="nav-links" to="/about">
                         ABOUT ME
-                    </Link>
-
-                    <Link className="navigation-links-item" to="/skills">
+                    </NavLinks>
+                    
+                    <NavLinks className="nav-links" to="/skills">
                         SKILLS
-                    </Link>
+                    </NavLinks>
 
-                    <Link className="navigation-links-item" to="/projects">
+                    <NavLinks className="nav-links" to="/projects">
                         PROJECTS
-                    </Link>
+                    </NavLinks>
 
-                    <Link className="navigation-links-item" to="/contact">
+                    <NavLinks className="nav-links" to="/contact">
                         CONTACT
-                    </Link>
+                    </NavLinks>
                 </NavigationLinks>
-            </nav>
-            
-        </NavigationContainer>
+            </NavigationContainer>
+
+            <Outlet />
+        </Fragment>
     );
 }
 

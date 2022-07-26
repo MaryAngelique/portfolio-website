@@ -21,13 +21,9 @@ export const NavigationLinks = styled.div`
     height: inherit;
     padding: 0px 20px;
     flex: 1;
+`;
 
-    Link {
-        display: flex;
-        list-style: none;
-        text-align: center;
-        line-height: 40px;
-        margin-right: 1.5rem;
-        font-size: 1.6rem;
-    }
+export const NavLinks = styled.div`
+    padding: 10px 15px;
+    cursor: pointer;
 `;
