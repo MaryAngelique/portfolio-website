@@ -14,6 +14,8 @@ export const HomeTitle = styled.div `
     font-size: 3rem;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     line-height: 5rem;
     position: relative;
     overflow: hidden;
@@ -32,6 +34,10 @@ export const HomeTitle = styled.div `
 `;
 
 export const HomeImage = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     border: #f9d342 dotted 5px;
     width: 250px;
     height: auto;
