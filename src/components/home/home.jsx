@@ -19,7 +19,6 @@ const Home = () => {
             <Navigation/>
             <HomeTitle>
                 <h2>Hi, I'm <span className="home-name">Angelique <span role="img" aria-label="girl in a computer">👩🏻‍💻</span></span></h2>
-
                 <h3>
                     <Typical
                         loop={Infinity}
