@@ -14,6 +14,14 @@ export const PersonalInfo = styled.div`
     float: left;
     padding: 10px;
 
+    h2 {
+        color: #f9d342;
+        text-align: left;
+        font-size: 1.5rem;
+        padding-bottom: 20px;
+        border-bottom: 3px dotted #f9d342;
+    }
+
     h3 {
         margin-bottom: 10px;
         font-size: 1.5rem;
@@ -44,18 +52,20 @@ export const PersonalInfo = styled.div`
 export const DeveloperDescription = styled.div`
     float: right;
     padding: 20px;
-    width: 50%;
+    width: 40%;
     
     h2 {
         color: #f9d342;
+        text-align: right;
         font-size: 1.5rem;
         padding-bottom: 20px;
-        border-bottom: 1px dashed #f9d342;
+        border-bottom: 3px dotted #f9d342;
     }
 
     p {
         color: #ffe67c;
-        font-size: 1rem;
+        text-align: right;
+        font-size: 18px;
         line-height: 1.65;
     }
 `;
