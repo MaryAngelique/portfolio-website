@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 export const HomeContainer = styled.div `
     position: relative;
     height: 100%;
-    justify-content: center;
+    justify-content: space-evenly;
     align-content: center;
 `;
 
@@ -12,6 +12,8 @@ export const HomeTitle = styled.div `
     justify-content: center;
     margin: 0px;
     font-size: 3rem;
+    display: flex;
+    flex-direction: column;
     line-height: 5rem;
     position: relative;
     overflow: hidden;
@@ -30,6 +32,7 @@ export const HomeTitle = styled.div `
 `;
 
 export const HomeImage = styled.div`
-    width: 150px;
-    height: 150px;
+    border: #f9d342 dotted 5px;
+    width: 250px;
+    height: auto;
 `;
