@@ -6,6 +6,12 @@ export const NavigationContainer = styled.div`
     width: 100%;
     display: flex;
     justify-content: space-between;
+
+    @media screen and (max-width: 800px) {
+        height: 60px;
+        padding: 10px 20px;
+        margin-bottom: 20px;
+    }
 `;
 
 export const NavigationLogo = styled.div`
