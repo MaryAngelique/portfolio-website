@@ -1,7 +1,8 @@
 import React, { Fragment } from "react";
 import { Outlet, Link } from "react-router-dom"
 
-import { ReactComponent as Logo } from "../../assets/MA.svg"
+import { ReactComponent as Logo } from "../../assets/MA.svg";
+import styled from "styled-components";
 
 import { 
     NavigationContainer, 
@@ -9,6 +10,16 @@ import {
     NavigationLogo,
     NavLinks
 } from "./styles";
+
+const Links = styled(Link)`
+    padding: 20px;
+    color: #292826;
+    text-decoration: none;
+
+    &:hover {
+        border: #292826 dotted 3px;
+    }
+`;
 
 const Navigation = () => {
 
@@ -20,17 +31,15 @@ const Navigation = () => {
                 </NavigationLogo>
                 
                 <NavigationLinks> 
-                    <ul className="navigation">
-                        <li><Link to={"/home"}>HOME</Link></li>
+                    <Links to={"/"}>HOME</Links>
 
-                        <li> <Link to={"/about"}>ABOUT ME</Link></li>
+                    <Links to={"/about"}>ABOUT ME</Links>
 
-                        <li><Link to={"/skills"}>SKILLS</Link></li>
+                    <Links to={"/skills"}>SKILLS</Links>
 
-                        <li><Link to={"/projects"}>PROJECTS</Link></li>
+                    <Links to={"/projects"}>PROJECTS</Links>
 
-                        <li><Link to={"/contact"}>CONTACT</Link></li>
-                    </ul>         
+                    <Links to={"/contact"}>CONTACT</Links>
                 
                 </NavigationLinks>
             </NavigationContainer>

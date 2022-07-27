@@ -33,25 +33,6 @@ export const NavigationLinks = styled.div`
     padding: 0px 20px;
     flex: 1;
 
-    ul {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        
-        li {
-            list-style: none;
-        }
-    }
-
-
-
-    @media screen and (max-width: 800px) {
-        width: 80%;
-    }
-`;
-
-export const NavLinks = styled.div`
-    
     @media screen and (max-width: 800px) {
         width: 80%;
     }
