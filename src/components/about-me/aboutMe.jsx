@@ -6,13 +6,14 @@ import {
     AboutMeContainer, 
     DeveloperDescription,
     PersonalInfo,
+    Title
 } from "./styles";
 
 const AboutMe = () => {
     return(
         <AboutMeContainer>
             <Navigation/>
-            <h1>About Me</h1>
+            <Title>About Me</Title>
 
             {/* Personal information */}
             <PersonalInfo>

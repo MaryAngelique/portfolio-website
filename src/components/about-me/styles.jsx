@@ -6,7 +6,21 @@ export const AboutMeContainer = styled.div`
     width: 100%;
     justify-content: space-evenly;
     align-content: center;
-`; 
+`;
+
+export const Title = styled.div`
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    line-height: 1rem;
+    text-transform: capitalize;
+    color: #f9d342;
+    flex-grow: 1;
+`;
 
 export const PersonalInfo = styled.div`
     display: flex;
