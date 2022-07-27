@@ -4,8 +4,7 @@ import Navigation from "../navigation/navigation";
 import { 
     SkillsContainer, 
     SkillsContentContainer, 
-    FrontEndSkills,
-    BackEndSkills,
+    SkillsStyles,
     Title,
 } from "./style";
 
@@ -149,7 +148,7 @@ const Skills = () => {
 
             <SkillsContentContainer>
                 {/* FrontEnd Skills */}
-                <FrontEndSkills>
+                <SkillsStyles>
                     <ul className="skills-container">
                         <h4>FrontEnd Skills</h4>
                         <li>HTML</li>
@@ -167,10 +166,10 @@ const Skills = () => {
                         <li>Responsive Web Design</li>
                         <li>TypeScript</li>
                     </ul>
-                </FrontEndSkills>
+                </SkillsStyles>
 
                 {/* BackEnd Skills */}
-                <BackEndSkills>
+                <SkillsStyles>
                     <ul className="skills-container">
                         <h4>BackEnd Skills</h4>
                         <li>Node Js</li>
@@ -182,20 +181,20 @@ const Skills = () => {
                         <li>Git CLI</li>
                         <li>Heroku CLI</li>
                     </ul>
-                </BackEndSkills>
+                </SkillsStyles>
 
                 {/* Deployment Skills */}
-                <div className="deployment-skills">
+                <SkillsStyles>
                     <ul className="skills-container">
                         <h4>Deployment Skills</h4>
                         <li>Heroku</li>
                         <li>Vercel</li>
                         <li>Netlify</li>
                     </ul>
-                </div>
+                </SkillsStyles>
 
                 {/* Additional Skills */}
-                <div className="additional-skills">
+                <SkillsStyles>
                     <ul className="skills-container">
                         <h4>Agile Project Management</h4>
                         <li>Algorithms</li>
@@ -210,7 +209,7 @@ const Skills = () => {
                         <li>Figma</li>
                         <li>Canva</li>
                     </ul>
-                </div>
+                </SkillsStyles>
             </SkillsContentContainer>
         </SkillsContainer>
     );
