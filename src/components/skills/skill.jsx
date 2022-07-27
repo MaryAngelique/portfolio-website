@@ -166,6 +166,30 @@ const Skills = () => {
                         <li>TypeScript</li>
                     </ul>
                 </div>
+
+                {/* BackEnd Skills */}
+                <div className="backend-skills">
+                    <ul className="skills-container">
+                        <h4>BackEnd Skills</h4>
+                        <li>Node Js</li>
+                        <li>SQL</li>
+                        <li>PostgreSQL</li>
+                        <li>SQLite Studio</li>
+                        <li>Express JS</li>
+                        <li>Knex JS</li>
+                        <li>Git CLI</li>
+                        <li>Heroku CLI</li>
+                    </ul>
+                </div>
+
+                {/* Deployment Skills */}
+                <div className="deployment-skills">
+                    <ul className="skills-container">
+                        <h4>Heroku</h4>
+                        <li>Vercel</li>
+                        <li>Netlify</li>
+                    </ul>
+                </div>
             </SkillsContentContainer>
         </SkillsContainer>
     );
