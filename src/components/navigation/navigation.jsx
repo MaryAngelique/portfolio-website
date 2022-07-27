@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { Outlet } from "react-router-dom"
+import { Outlet, Link } from "react-router-dom"
 
 import { ReactComponent as Logo } from "../../assets/MA.svg"
 
@@ -19,26 +19,19 @@ const Navigation = () => {
                     <Logo />
                 </NavigationLogo>
                 
-                <NavigationLinks>          
-                    <NavLinks className="nav-links" to="/home">
-                        HOME
-                    </NavLinks>
+                <NavigationLinks> 
+                    <ul className="navigation">
+                        <li><Link to={"/home"}>HOME</Link></li>
 
-                    <NavLinks className="nav-links" to="/about">
-                        ABOUT ME
-                    </NavLinks>
-                    
-                    <NavLinks className="nav-links" to="/skills">
-                        SKILLS
-                    </NavLinks>
+                        <li> <Link to={"/about"}>ABOUT ME</Link></li>
 
-                    <NavLinks className="nav-links" to="/projects">
-                        PROJECTS
-                    </NavLinks>
+                        <li><Link to={"/skills"}>SKILLS</Link></li>
 
-                    <NavLinks className="nav-links" to="/contact">
-                        CONTACT
-                    </NavLinks>
+                        <li><Link to={"/projects"}>PROJECTS</Link></li>
+
+                        <li><Link to={"/contact"}>CONTACT</Link></li>
+                    </ul>         
+                
                 </NavigationLinks>
             </NavigationContainer>
 
