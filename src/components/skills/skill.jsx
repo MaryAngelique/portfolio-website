@@ -5,6 +5,7 @@ import {
     SkillsContainer, 
     SkillsContentContainer, 
     FrontEndSkills,
+    BackEndSkills,
     Title,
 } from "./style";
 
@@ -169,7 +170,7 @@ const Skills = () => {
                 </FrontEndSkills>
 
                 {/* BackEnd Skills */}
-                <div className="backend-skills">
+                <BackEndSkills>
                     <ul className="skills-container">
                         <h4>BackEnd Skills</h4>
                         <li>Node Js</li>
@@ -181,12 +182,13 @@ const Skills = () => {
                         <li>Git CLI</li>
                         <li>Heroku CLI</li>
                     </ul>
-                </div>
+                </BackEndSkills>
 
                 {/* Deployment Skills */}
                 <div className="deployment-skills">
                     <ul className="skills-container">
-                        <h4>Heroku</h4>
+                        <h4>Deployment Skills</h4>
+                        <li>Heroku</li>
                         <li>Vercel</li>
                         <li>Netlify</li>
                     </ul>

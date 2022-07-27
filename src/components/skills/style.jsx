@@ -31,7 +31,17 @@ export const SkillsContentContainer = styled.div`
 export const FrontEndSkills = styled.div`
     display: inline-block;
     color: #f9d342;
-    line-height: 1rem;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    position: relative;
+    text-transform: uppercase;
+    padding: 5px 10px;
+`;
+
+export const BackEndSkills = styled.div`
+    display: inline-block;
+    color: #f9d342;
+    line-height: 20px;
     letter-spacing: 0.5px;
     position: relative;
     text-transform: uppercase;
