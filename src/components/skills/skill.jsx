@@ -190,6 +190,24 @@ const Skills = () => {
                         <li>Netlify</li>
                     </ul>
                 </div>
+
+                {/* Additional Skills */}
+                <div className="additional-skills">
+                    <ul className="skills-container">
+                        <h4>Agile Project Management</h4>
+                        <li>Algorithms</li>
+                        <li>Architecture</li>
+                        <li>Debugging</li>
+                        <li>Deployment</li>
+                        <li>Troubleshooting</li>
+                        <li>Unit Testing</li>
+                        <li>Integration Testing</li>
+                        <li>Visual Studio Code</li>
+                        <li>CodePen</li>
+                        <li>Figma</li>
+                        <li>Canva</li>
+                    </ul>
+                </div>
             </SkillsContentContainer>
         </SkillsContainer>
     );
