@@ -11,7 +11,7 @@ import {
 const frontEndData = [
     // FrontEnd Skills
     {
-        type: "FrontEnd",
+        title: "FrontEnd",
         data: [
             {
                 name: "HTML"
@@ -59,7 +59,7 @@ const frontEndData = [
     // BackEnd Skills
 const backEndData = [
     {
-        type: "BackEnd",
+        title: "BackEnd",
         data: [
             {
                 name: "Node.js"
@@ -110,7 +110,7 @@ const deploymentData = [
 const additionalSkillsData = [
     // Additional Skills
     {
-        type: "Additional Skills",
+        title: "Additional Skills",
         data: [
             {
                 name: "Agile Project Management"
@@ -146,7 +146,26 @@ const Skills = () => {
             <Navigation/>
             <Title>Skills</Title>
             <SkillsContentContainer>
-                
+                {/* FrontEnd Skills */}
+                <div className="frontend-skills">
+                    <ul className="skills-container">
+                        <h4>FrontEnd Skills</h4>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>React JS</li>
+                        <li>Redux</li>
+                        <li>Context API</li>
+                        <li>Axios</li>
+                        <li>Bootstrap</li>
+                        <li>Material UI</li>
+                        <li>DOM Manipulation</li>
+                        <li>JSON</li>
+                        <li>Ajax</li>
+                        <li>JQuery</li>
+                        <li>Responsive Web Design</li>
+                        <li>TypeScript</li>
+                    </ul>
+                </div>
             </SkillsContentContainer>
         </SkillsContainer>
     );
