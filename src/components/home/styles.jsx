@@ -9,9 +9,10 @@ export const HomeContainer = styled.div `
 
 export const HomeTitle = styled.div `
     color: #f9d342;
+    float: left;
     justify-content: center;
     margin: 0px;
-    font-size: 3rem;
+    font-size: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,9 +24,10 @@ export const HomeTitle = styled.div `
 
     h3 {
         color: #f9d342;
+        align-items: left;
         margin: 0px;
         font-weight: 500;
-        font-size: 2.4rem;
+        font-size: 1.6rem;
         line-height: 5rem;
         position: relative;
         overflow: hidden;

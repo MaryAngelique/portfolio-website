@@ -1,9 +1,11 @@
 import styled, { css } from "styled-components";
 
 export const SkillsContainer = styled.div`
-    display: flex;
-    padding: 20px;
-    gap: 20px;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    justify-content: space-evenly;
+    align-content: center;
 `; 
 
 export const SkillsContentContainer = styled.div`
