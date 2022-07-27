@@ -4,7 +4,7 @@ import Navigation from "../navigation/navigation";
 import { 
     SkillsContainer, 
     SkillsContentContainer, 
-    SkillsContentText,
+    FrontEndSkills,
     Title,
 } from "./style";
 
@@ -145,9 +145,10 @@ const Skills = () => {
         <SkillsContainer>
             <Navigation/>
             <Title>Skills</Title>
+
             <SkillsContentContainer>
                 {/* FrontEnd Skills */}
-                <div className="frontend-skills">
+                <FrontEndSkills>
                     <ul className="skills-container">
                         <h4>FrontEnd Skills</h4>
                         <li>HTML</li>
@@ -165,7 +166,7 @@ const Skills = () => {
                         <li>Responsive Web Design</li>
                         <li>TypeScript</li>
                     </ul>
-                </div>
+                </FrontEndSkills>
 
                 {/* BackEnd Skills */}
                 <div className="backend-skills">
