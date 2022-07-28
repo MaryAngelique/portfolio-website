@@ -57,62 +57,42 @@ const projectsData = [
 ];
 
 const Projects = () => {
-    const [filterState, setfilterState] = useState(1);
-    const [hoverState, sethoverState] = useState(null);
 
-    function handleFilter(currentId) {
-        setfilterState(currentId);
-    }
-
-    function handleHover(index) {
-        sethoverState(index);
-    }
-
-    const filterItems =
-        filterState === 1
-            ? projectsData
-            : projectsData.filter((item) => item.id === filterState);
- 
     return(
         <ProjectsContainer>
             <Navigation/>
-            <ul className="projects-content-filter">
-                {filterData.map((item) => (
-                    <li
-                        className={item.filterId === filterState ? "active" : ""}
-                        onClick={() => handleFilter(item.filterId)}
-                        key={item.filterId}
-                    >
-                        {item.label}
-                    </li>
-                ))}
-            </ul>
 
-            <ProjectsContent>
-                {filterItems.map((item, index) => (
-                    <div
-                        className="projects-content-project"
-                        key={`cardItem${item.name.trim()}`}
-                        onMouseEnter={() => handleHover(index)}
-                        onMouseLeave={() => handleHover(null)}
-                    >
-                        <div className="projects-content-project-image">
-                            <a>
-                                <img alt="data" src={item.image} />
-                            </a>
-                        </div>
-
-                        <div className="hover">
-                            {index === hoverState && (
-                                <div>
-                                    <p>{item.name}</p>
-                                    <button>Go to Project</button>
-                                </div>
-                            )}
-                        </div>
-                    </div>
-                ))}
-            </ProjectsContent>
+            <div className="projects-container">
+                <div className="frontend-projects">
+                    <ul className="project-list">
+                        <li>
+                            <h3>CoderHeroes</h3>
+                            <img src="" alt=""/>
+                        </li>
+                        <li>
+                            <h3>CoderHeroes</h3>
+                            <img src="" alt=""/>
+                        </li>
+                        <li>
+                            <h3>CoderHeroes</h3>
+                            <img src="" alt=""/>
+                        </li>
+                        <li>
+                            <h3>CoderHeroes</h3>
+                            <img src="" alt=""/>
+                        </li>
+                        <li>
+                            <h3>CoderHeroes</h3>
+                            <img src="" alt=""/>
+                        </li>
+                        <li>
+                            <h3>CoderHeroes</h3>
+                            <img src="" alt=""/>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
       </ProjectsContainer>
     );
 }
