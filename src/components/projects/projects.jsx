@@ -5,62 +5,13 @@ import CoderHeroes from "./assets/coderheroes.png";
 import Todo from "./assets/todo-app.png"
 import Potluck from "./assets/potluck-planner.png"
 import Market from "./assets/african-marketplace.png"
-import Speak from "./assets/speak-your-number.png"
+import Speak from "./assets/speak-your-number.png";
+import Monsta from "./assets/MonstaDex.png";
 
 import {
     ProjectsContainer,
     ProjectsContent
 } from "./styles";
-
-// Filter Projects Data
-const filterData = [
-    {
-        filterId: 1,
-        label: "All",
-    },
-    {
-        filterId: 2,
-        label: "FrontEnd",
-    },
-    {
-        filterId: 3,
-        label: "BackEnd",
-    },
-];
-
-// Projects Data
-const projectsData = [
-    {
-        projectId: 1,
-        name: "Halo Clothing",
-        image: "",
-        link: "",
-    },
-    {
-        projectId: 1,
-        name: "Todo App",
-        link: "",
-        image: "",
-    },
-    {
-        projectId: 2,
-        name: "African Marketplace",
-        image: "",
-        link: "",
-    },
-    {
-        projectId: 3,
-        name: "Potluck Planner",
-        image: "",
-        link: "",
-    },
-    {
-        projectId: 2,
-        name: "CoderHeroes",
-        image: "",
-        link: "",
-    },
-];
 
 const Projects = () => {
 
@@ -92,8 +43,8 @@ const Projects = () => {
                             <img src={Speak} alt="" className="image"/>
                         </li>
                         <li>
-                            <h3>CoderHeroes</h3>
-                            <img src="" alt="" className="image"/>
+                            <h3>MonstaDex</h3>
+                            <img src={Monsta} alt="" className="image"/>
                         </li>
                     </ul>
                 </div>
