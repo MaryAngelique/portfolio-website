@@ -64,7 +64,7 @@ const Skills = () => {
                         <h4>Deployment Skills</h4>
                         <List>Heroku</List>
                         <List>Vercel</List>
-                        <List>NetListfy</List>
+                        <List>Netlify</List>
                     </ul>
                 </SkillsStyles>
 
