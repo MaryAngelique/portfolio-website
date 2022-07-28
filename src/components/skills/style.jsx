@@ -24,17 +24,15 @@ export const Title = styled.div`
 
 export const SkillsContentContainer = styled.div`
     flex-direction: column;
+    padding: 20px;
     justify-content: space-around;
     align-items: center;
 `;
 
 export const SkillsStyles = styled.div`
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: inline-flex;
     color: #f9d342;
     letter-spacing: 0.5px;
     position: relative;
     text-transform: uppercase;
-    padding: 5px 10px;
 `;

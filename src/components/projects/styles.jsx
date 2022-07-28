@@ -1,28 +1,11 @@
 import styled, { css } from "styled-components";
 
 export const ProjectsContainer = styled.div`
-    padding: 20px;
+    position: relative;
+    height: 100%;
     width: 100%;
-
-    ul {
-        display: inline-block;
-        margin: 0 auto;
-        border-radius: 25px;
-        border: 1px dashed #f9d342;
-
-        :hover {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            right: 0;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            opacity: 0;
-            transition: 0.5s ease;
-            background-color: #f9d342;
-        }
-    }
+    justify-content: space-evenly;
+    align-content: center;
 `;
 
 export const ProjectsContent = styled.div`

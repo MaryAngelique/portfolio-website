@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Navigation from "../navigation/navigation";
 
 import {
     ProjectsContainer,
@@ -74,6 +75,7 @@ const Projects = () => {
  
     return(
         <ProjectsContainer>
+            <Navigation/>
             <ul className="projects-content-filter">
                 {filterData.map((item) => (
                     <li
