@@ -5,7 +5,8 @@ import CoderHeroes from "./assets/coderheroes.png";
 import Todo from "./assets/todo-app.png"
 import Potluck from "./assets/potluck-planner.png"
 import Market from "./assets/african-marketplace.png"
-import Speak from "./assets/speak-your-number.png"
+import Speak from "./assets/speak-your-number.png";
+import Monsta from "./assets/MonstaDex.png";
 
 import {
     ProjectsContainer,
@@ -41,6 +42,11 @@ const Projects = () => {
                             <h3>Speak Your Number - Speech Number Guessing Game</h3>
                             <img src={Speak} alt="" className="image"/>
                         </li>
+                        <li>
+                            <h3>MonstaDex</h3>
+                            <img src={Monsta} alt="" className="image"/>
+                        </li>
+                    </ul>
                 </div>
             </div>
       </ProjectsContainer>
