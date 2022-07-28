@@ -3,6 +3,7 @@ import Navigation from "../navigation/navigation";
 
 import CoderHeroes from "./assets/coderheroes.png";
 import Todo from "./assets/todo-app.png"
+import Potluck from "./assets/potluck-planner.png"
 
 import {
     ProjectsContainer,
@@ -77,8 +78,8 @@ const Projects = () => {
                             <img src={Todo} alt="" className="image"/>
                         </li>
                         <li>
-                            <h3>CoderHeroes</h3>
-                            <img src="" alt="" className="image"/>
+                            <h3>PotLuck Planner</h3>
+                            <img src={Potluck} alt="" className="image"/>
                         </li>
                         <li>
                             <h3>CoderHeroes</h3>
