@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Navigation from "../navigation/navigation";
 
 import CoderHeroes from "./assets/coderheroes.png";
+import Todo from "./assets/todo-app.png"
 
 import {
     ProjectsContainer,
@@ -72,8 +73,8 @@ const Projects = () => {
                             <img src={CoderHeroes} alt="" className="image"/>
                         </li>
                         <li>
-                            <h3>CoderHeroes</h3>
-                            <img src="" alt="" className="image"/>
+                            <h3>Todo App</h3>
+                            <img src={Todo} alt="" className="image"/>
                         </li>
                         <li>
                             <h3>CoderHeroes</h3>
