@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Navigation from "../navigation/navigation";
 
+import CoderHeroes from "./assets/coderheroes.png";
+
 import {
     ProjectsContainer,
     ProjectsContent
@@ -67,29 +69,28 @@ const Projects = () => {
                     <ul className="project-list">
                         <li>
                             <h3>CoderHeroes</h3>
-                            <img src="" alt=""/>
+                            <img src={CoderHeroes} alt="" className="image"/>
                         </li>
                         <li>
                             <h3>CoderHeroes</h3>
-                            <img src="" alt=""/>
+                            <img src="" alt="" className="image"/>
                         </li>
                         <li>
                             <h3>CoderHeroes</h3>
-                            <img src="" alt=""/>
+                            <img src="" alt="" className="image"/>
                         </li>
                         <li>
                             <h3>CoderHeroes</h3>
-                            <img src="" alt=""/>
+                            <img src="" alt="" className="image"/>
                         </li>
                         <li>
                             <h3>CoderHeroes</h3>
-                            <img src="" alt=""/>
+                            <img src="" alt="" className="image"/>
                         </li>
                         <li>
                             <h3>CoderHeroes</h3>
-                            <img src="" alt=""/>
+                            <img src="" alt="" className="image"/>
                         </li>
-                        
                     </ul>
                 </div>
             </div>
