@@ -8,20 +8,17 @@ export const ProjectsContainer = styled.div`
     align-content: center;
 `;
 
-export const ProjectsContent = styled.div`
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    text-align: center;
+export const ProjectsListContainer = styled.div`
+    flex-direction: column;
+    padding: 20px;
+    justify-content: space-around;
+    align-items: center;
+`;
 
-    p {
-        color: #000000;
-        margin: 0px;
-        font-size: 4rem;
-        position: relative;
-        overflow: hidden;
-        white-space: nowrap;
-        animation: typingEffect 1s steps(30,end);
-    }
+export const ProjectsStyles = styled.div`
+    display: inline-flex;
+    color: #f9d342;
+    text-align: center;
+    padding: 10px;
+    letter-spacing: 0.6px;
 `;
