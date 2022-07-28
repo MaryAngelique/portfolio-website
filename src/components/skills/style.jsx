@@ -23,16 +23,16 @@ export const Title = styled.div`
 `;
 
 export const SkillsContentContainer = styled.div`
-    display: inline-block;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
 `;
 
 export const SkillsStyles = styled.div`
-    display: inline-block;
-    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     color: #f9d342;
-    line-height: 20px;
     letter-spacing: 0.5px;
     position: relative;
     text-transform: uppercase;
