@@ -10,15 +10,17 @@ export const ProjectsContainer = styled.div`
 
 export const ProjectsListContainer = styled.div`
     flex-direction: column;
+    text-align: center;
     padding: 20px;
     justify-content: space-around;
     align-items: center;
 `;
 
-export const ProjectsStyles = styled.div`
-    display: inline-flex;
+export const ProjectStyles = styled.div`
+    display: inline-block;
     color: #f9d342;
-    text-align: center;
-    padding: 10px;
-    letter-spacing: 0.6px;
+    margin: 40px;
+    letter-spacing: 0.5px;
+    position: relative;
+    text-transform: uppercase;
 `;
