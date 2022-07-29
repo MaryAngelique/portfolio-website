@@ -23,4 +23,5 @@ export const ProjectStyles = styled.div`
     letter-spacing: 0.5px;
     position: relative;
     text-transform: uppercase;
+    padding: 5px;
 `;
