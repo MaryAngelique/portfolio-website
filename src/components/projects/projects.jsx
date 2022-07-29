@@ -25,6 +25,10 @@ const List = styled.div`
     list-style: none;
     line-height: 1.6rem;
 
+    :hover {
+            transform: scale(1.1);
+    }
+
     a {
         text-decoration: none;
         color: #f9d342;
@@ -43,6 +47,7 @@ const List = styled.div`
     img {
         width: 250px;
         height: 250px;
+        margin: 0 auto;
     }
 `;
 
