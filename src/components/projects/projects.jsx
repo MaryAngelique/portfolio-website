@@ -116,36 +116,46 @@ const Projects = () => {
 
                     <ProjectStyles>
                         <List>
-                            <h3>Typing Game</h3>
-                            <img src={Typing} alt="" className="image"/>
+                            <a href="https://typing-game-alpha.vercel.app/" target="_blank">
+                                <h3>Typing Game</h3>
+                                <img src={Typing} alt="" className="image"/>
+                            </a>
                         </List>
                     </ProjectStyles>
                     
                     <ProjectStyles>
                         <List>
-                            <h3>Expense Tracker</h3>
-                            <img src={Expense} alt="" className="image"/>
+                            <a href="https://expense-tracker-zero.vercel.app/" target="_blank">
+                                <h3>Expense Tracker</h3>
+                                <img src={Expense} alt="" className="image"/>
+                            </a>
                         </List>
                     </ProjectStyles>
 
                     <ProjectStyles>
                         <List>
-                            <h3>Movie Seat Booking</h3>
-                            <img src={MovieSeat} alt="" className="image"/>
+                            <a href="https://movie-seat-booking-beta-seven.vercel.app/" target="_blank">
+                                <h3>Movie Seat Booking</h3>
+                                <img src={MovieSeat} alt="" className="image"/>
+                            </a>
                         </List>
                     </ProjectStyles>
 
                     <ProjectStyles>
                         <List>
-                            <h3>Movie App</h3>
-                            <img src={Movies} alt="" className="image"/>
+                            <a href="https://movie-app-project-zero.vercel.app/" target="_blank">
+                                <h3>Movie App</h3>
+                                <img src={Movies} alt="" className="image"/>
+                            </a>
                         </List>
                     </ProjectStyles>
 
                     <ProjectStyles>
                         <List>
-                            <h3>Drink Water</h3>
-                            <img src={Drink} alt="" className="image"/>
+                            <a href="https://drink-water-sigma.vercel.app/" target="_blank">
+                                <h3>Drink Water</h3>
+                                <img src={Drink} alt="" className="image"/>
+                            </a>
                         </List>
                     </ProjectStyles>
                     
