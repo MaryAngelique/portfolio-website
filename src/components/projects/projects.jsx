@@ -11,6 +11,7 @@ import Monsta from "./assets/MonstaDex.png";
 import Typing from "./assets/typing-game.png";
 import Expense from "./assets/expense-tracker.png";
 import MovieSeat from "./assets/movie-seat-booking.png";
+import Movies from "./assets/movie-app.png";
 
 import {
     ProjectsContainer,
@@ -98,6 +99,13 @@ const Projects = () => {
                         <List>
                             <h3>Movie Seat Booking</h3>
                             <img src={MovieSeat} alt="" className="image"/>
+                        </List>
+                    </ProjectStyles>
+
+                    <ProjectStyles>
+                        <List>
+                            <h3>Movie App</h3>
+                            <img src={Movies} alt="" className="image"/>
                         </List>
                     </ProjectStyles>
                     
