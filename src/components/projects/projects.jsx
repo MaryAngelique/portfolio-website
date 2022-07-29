@@ -8,7 +8,9 @@ import Potluck from "./assets/potluck-planner.png"
 import Market from "./assets/african-marketplace.png"
 import Speak from "./assets/speak-your-number.png";
 import Monsta from "./assets/MonstaDex.png";
-import Typing from "./assets/typing-game.png"
+import Typing from "./assets/typing-game.png";
+import Expense from "./assets/expense-tracker.png";
+import MovieSeat from "./assets/movie-seat-booking.png";
 
 import {
     ProjectsContainer,
@@ -66,7 +68,7 @@ const Projects = () => {
                     
                     <ProjectStyles>
                         <List>
-                            <h3>Speak Your Number <br/> (Speech Number <br/> Guessing Game)</h3>
+                            <h3>Speak Your Number</h3>
                             <img src={Speak} alt="" className="image"/>
                         </List>
                     </ProjectStyles>
@@ -82,6 +84,20 @@ const Projects = () => {
                         <List>
                             <h3>Typing Game</h3>
                             <img src={Typing} alt="" className="image"/>
+                        </List>
+                    </ProjectStyles>
+                    
+                    <ProjectStyles>
+                        <List>
+                            <h3>Expense Tracker</h3>
+                            <img src={Expense} alt="" className="image"/>
+                        </List>
+                    </ProjectStyles>
+
+                    <ProjectStyles>
+                        <List>
+                            <h3>Movie Seat Booking</h3>
+                            <img src={MovieSeat} alt="" className="image"/>
                         </List>
                     </ProjectStyles>
                     
