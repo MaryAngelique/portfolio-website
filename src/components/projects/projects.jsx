@@ -12,6 +12,7 @@ import Typing from "./assets/typing-game.png";
 import Expense from "./assets/expense-tracker.png";
 import MovieSeat from "./assets/movie-seat-booking.png";
 import Movies from "./assets/movie-app.png";
+import Drink from "./assets/drink-water.png";
 
 import {
     ProjectsContainer,
@@ -21,9 +22,23 @@ import {
 const List = styled.div`
     display: inline-start;
     text-decoration: none;
-    color: #f9d342;
     list-style: none;
     line-height: 1.6rem;
+
+    a {
+        text-decoration: none;
+        color: #f9d342;
+    }
+
+    h3 {
+        text-align: center;
+        margin-bottom: 20px;
+
+        :hover {
+            cursor: pointer;
+            border-bottom: #f9d342 3px dotted;
+        }
+    }
     
     img {
         width: 250px;
@@ -41,8 +56,10 @@ const Projects = () => {
                 <ul className="project-list">
                     <ProjectStyles>
                         <List>
-                            <h3>CoderHeroes</h3>
-                            <img src={CoderHeroes} alt="" className="image"/>
+                            <a href="https://a.coderheroes.dev/" target="_blank">
+                                <h3>CoderHeroes</h3>
+                                <img src={CoderHeroes} alt="" className="image"/>
+                            </a>   
                         </List>
                     </ProjectStyles>
 
@@ -106,6 +123,13 @@ const Projects = () => {
                         <List>
                             <h3>Movie App</h3>
                             <img src={Movies} alt="" className="image"/>
+                        </List>
+                    </ProjectStyles>
+
+                    <ProjectStyles>
+                        <List>
+                            <h3>Drink Water</h3>
+                            <img src={Drink} alt="" className="image"/>
                         </List>
                     </ProjectStyles>
                     
