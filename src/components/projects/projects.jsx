@@ -11,7 +11,7 @@ import Monsta from "./assets/MonstaDex.png";
 
 import {
     ProjectsContainer,
-    ProjectsStyles,
+    ProjectStyles,
 } from "./styles";
 
 const List = styled.div`
@@ -34,34 +34,50 @@ const Projects = () => {
             <Navigation/>
 
             <ProjectsContainer>
-                <ProjectsStyles>
-                    <ul className="project-list">
+                <ul className="project-list">
+                    <ProjectStyles>
                         <List>
                             <h3>CoderHeroes</h3>
                             <img src={CoderHeroes} alt="" className="image"/>
                         </List>
+                    </ProjectStyles>
+
+                    <ProjectStyles>
                         <List>
                             <h3>Todo App</h3>
                             <img src={Todo} alt="" className="image"/>
                         </List>
+                    </ProjectStyles>
+                     
+                    <ProjectStyles>
                         <List>
                             <h3>PotLuck Planner</h3>
                             <img src={Potluck} alt="" className="image"/>
                         </List>
+                    </ProjectStyles>
+                    
+                    <ProjectStyles>
                         <List>
                             <h3>African Marketplace</h3>
                             <img src={Market} alt="" className="image"/>
                         </List>
+                    </ProjectStyles>
+                    
+                    <ProjectStyles>
                         <List>
-                            <h3>Speak Your Number - Speech Number Guessing Game</h3>
+                            <h3>Speak Your Number <br/> (Speech Number <br/> Guessing Game)</h3>
                             <img src={Speak} alt="" className="image"/>
                         </List>
+                    </ProjectStyles>
+                    
+                    <ProjectStyles>
                         <List>
                             <h3>MonstaDex</h3>
                             <img src={Monsta} alt="" className="image"/>
                         </List>
-                    </ul>
-                </ProjectsStyles>
+                    </ProjectStyles>
+                    
+                </ul>
             </ProjectsContainer>
       </ProjectsContainer>
     );
