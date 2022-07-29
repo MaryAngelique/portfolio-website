@@ -90,24 +90,27 @@ const Projects = () => {
                     
                     <ProjectStyles>
                         <List>
-                            <a href="https://speak-your-number.vercel.app/" target="_blank">
+                            
                                 <h3>African Marketplace</h3>
                                 <img src={Market} alt="" className="image"/>
+                        </List>
+                    </ProjectStyles>
+                    
+                    <ProjectStyles>
+                        <List>
+                            <a href="https://speak-your-number.vercel.app/" target="_blank">
+                                <h3>Speak Your Number</h3>
+                                <img src={Speak} alt="" className="image"/>
                             </a>
                         </List>
                     </ProjectStyles>
                     
                     <ProjectStyles>
                         <List>
-                            <h3>Speak Your Number</h3>
-                            <img src={Speak} alt="" className="image"/>
-                        </List>
-                    </ProjectStyles>
-                    
-                    <ProjectStyles>
-                        <List>
-                            <h3>MonstaDex</h3>
-                            <img src={Monsta} alt="" className="image"/>
+                            <a href="https://monstadex.vercel.app/" target="_blank">
+                                <h3>MonstaDex</h3>
+                                <img src={Monsta} alt="" className="image"/>
+                            </a>
                         </List>
                     </ProjectStyles>
 
