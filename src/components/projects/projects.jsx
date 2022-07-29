@@ -8,6 +8,7 @@ import Potluck from "./assets/potluck-planner.png"
 import Market from "./assets/african-marketplace.png"
 import Speak from "./assets/speak-your-number.png";
 import Monsta from "./assets/MonstaDex.png";
+import Typing from "./assets/typing-game.png"
 
 import {
     ProjectsContainer,
@@ -74,6 +75,13 @@ const Projects = () => {
                         <List>
                             <h3>MonstaDex</h3>
                             <img src={Monsta} alt="" className="image"/>
+                        </List>
+                    </ProjectStyles>
+
+                    <ProjectStyles>
+                        <List>
+                            <h3>Typing Game</h3>
+                            <img src={Typing} alt="" className="image"/>
                         </List>
                     </ProjectStyles>
                     
