@@ -17,6 +17,7 @@ import Drink from "./assets/drink-water.png";
 import {
     ProjectsContainer,
     ProjectStyles,
+    Title
 } from "./styles";
 
 const List = styled.div`
@@ -26,7 +27,8 @@ const List = styled.div`
     line-height: 1.6rem;
 
     :hover {
-            transform: scale(1.1);
+        transform: scale(1.1);
+        border-bottom: #f9d342 3px dashed;
     }
 
     a {
@@ -40,7 +42,7 @@ const List = styled.div`
 
         :hover {
             cursor: pointer;
-            border-bottom: #f9d342 3px dotted;
+            border-bottom: #f9d342 5px dotted;
         }
     }
     
@@ -56,6 +58,7 @@ const Projects = () => {
     return(
         <ProjectsContainer>
             <Navigation/>
+            <Title>Projects</Title>
 
             <ProjectsContainer>
                 <ul className="project-list">
@@ -70,8 +73,11 @@ const Projects = () => {
 
                     <ProjectStyles>
                         <List>
-                            <h3>Todo App</h3>
-                            <img src={Todo} alt="" className="image"/>
+                            <a href="https://todo-list-three-bay.vercel.app/" target="_blank">
+                                <h3>Todo App</h3>
+                                <img src={Todo} alt="" className="image"/>
+                                
+                            </a>
                         </List>
                     </ProjectStyles>
                      
