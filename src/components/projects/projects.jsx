@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Navigation from "../navigation/navigation";
 import styled from "styled-components";
 
+import CRWN from "./assets/crwn-clothing.png";
 import CoderHeroes from "./assets/coderheroes.png";
 import Todo from "./assets/todo-app.png"
 import Potluck from "./assets/potluck-planner.png"
@@ -62,6 +63,15 @@ const Projects = () => {
 
             <ProjectsContainer>
                 <ul className="project-list">
+                    <ProjectStyles>
+                        <List>
+                            <a href="https://crwn-clothing-zero.vercel.app/" target="_blank">
+                                <h3>CRWN Clothing</h3>
+                                <img src={CRWN} alt="" className="image"/>
+                            </a>   
+                        </List>
+                    </ProjectStyles>
+
                     <ProjectStyles>
                         <List>
                             <a href="https://a.coderheroes.dev/" target="_blank">
