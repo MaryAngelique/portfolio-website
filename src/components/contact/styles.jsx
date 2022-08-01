@@ -46,7 +46,7 @@ export const Label = styled.div`
     left: 12px;
     color: #f9d342;
     font-size: 1rem;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 `;
 
 export const Button = styled.div`
@@ -58,6 +58,7 @@ export const Button = styled.div`
     letter-spacing: 1.5px;
     line-height: 1rem;
     background-color: #f9d342;
+    border-radius: 20px;
     text-transform: capitalize;
     color: #292826;
     flex-grow: 1;

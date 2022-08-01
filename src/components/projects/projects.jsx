@@ -40,6 +40,7 @@ const List = styled.div`
     h3 {
         text-align: center;
         margin-bottom: 20px;
+        font-style: italic;
 
         :hover {
             cursor: pointer;
