@@ -3,57 +3,86 @@ import React from "react";
 import Navigation from "../navigation/navigation"
 
 import {
-    ContactContainer, ContactContent
+    ContactContainer, 
+    ContactContent,
+    Title,
+    ContactForm,
+    Label,
+
 } from "./styles"
+
+const InputStyle = {
+    padding: "10px",
+    lineHeight: 1,
+    marginLeft: "5rem",
+    fontSize: "16px",
+    width: "20rem",
+    color: "#292826",
+    borderRadius: "10px"
+}
+
+const DescriptionStyle = {
+    padding: "10px",
+    lineHeight: 1,
+    marginLeft: "2.5rem",
+    fontSize: "16px",
+    width: "20rem",
+    color: "#292826",
+    borderRadius: "10px"
+}
 
 const Contact = () => {
     return(
         <ContactContainer>
             <Navigation/>
             <ContactContent>
-                <h3 className="contact-title">Let's Chat!</h3>
+                <Title>Let's Chat!</Title>
 
                 <div className="contact-form-container">
-                    <div className="contact-form">
+                    <ContactForm>
                         <div>
-                            <label htmlFor="name" className="nameLabel">
+                            <Label>
                                 Name
-                            </label>
-
-                            <input
-                                required
-                                name="name"
-                                className="inputName"
-                                type={"text"}
-                            />  
+                            
+                                <input
+                                    required
+                                    name="name"
+                                    className="inputName"
+                                    type={"text"}
+                                    style={InputStyle}
+                                />
+                            </Label>
                         </div>
 
                         <div>
-                            <label htmlFor="email" className="emailLabel">
+                            <Label>
                                 Email
-                            </label>
 
-                            <input
-                                required
-                                name="email"
-                                className="inputEmail"
-                                type={"text"}
-                            />
+                                <input
+                                    required
+                                    name="email"
+                                    className="inputEmail"
+                                    type={"text"}
+                                    style={InputStyle}
+                                />
+                            </Label>
                         </div>
 
                         <div>
-                            <label htmlFor="description" className="descriptionLabel">
+                            <Label>
                                 Description
-                            </label>
-                            <textarea
-                                required
-                                name="description"
-                                className="inputDescription"
-                                type={"text"}
-                                rows="5"
-                            />
+                           
+                                <textarea
+                                    required
+                                    name="description"
+                                    className="inputDescription"
+                                    type={"text"}
+                                    rows="5"
+                                    style={DescriptionStyle}
+                                />
+                            </Label>
                         </div>
-                    </div>
+                    </ContactForm>
 
                     <button>Submit</button>
                 </div>
