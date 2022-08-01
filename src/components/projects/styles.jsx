@@ -10,9 +10,12 @@ export const ProjectsContainer = styled.div`
 
 export const Title = styled.div`
     padding: 20px;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: 500;
+    font-style: italic;
     font-size: 36px;
     font-weight: 700;
     letter-spacing: 1.5px;

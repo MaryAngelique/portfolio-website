@@ -18,6 +18,7 @@ import Drink from "./assets/drink-water.png";
 import {
     ProjectsContainer,
     ProjectStyles,
+    ProjectsListContainer,
     Title
 } from "./styles";
 
@@ -40,6 +41,7 @@ const List = styled.div`
     h3 {
         text-align: center;
         margin-bottom: 20px;
+        font-style: italic;
 
         :hover {
             cursor: pointer;
@@ -61,7 +63,7 @@ const Projects = () => {
             <Navigation/>
             <Title>Projects</Title>
 
-            <ProjectsContainer>
+            <ProjectsListContainer>
                 <ul className="project-list">
                     <ProjectStyles>
                         <List>
@@ -170,7 +172,7 @@ const Projects = () => {
                     </ProjectStyles>
                     
                 </ul>
-            </ProjectsContainer>
+            </ProjectsListContainer>
       </ProjectsContainer>
     );
 }
