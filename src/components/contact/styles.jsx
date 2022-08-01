@@ -15,6 +15,8 @@ export const Title = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: 500;
+    font-style: italic;
     font-size: 36px;
     font-weight: 700;
     letter-spacing: 1.5px;
@@ -28,3 +30,21 @@ export const ContactContent = styled.div`
     padding: 20px;
 `;
 
+
+export const ContactForm = styled.div`
+    display: flex;
+    flex-direction: column;
+    padding: 16px 12px;
+    transition: all 0.5s ease;
+    position: relative;
+    background-color: transparent;
+    color: #f9d342;
+`;
+
+export const Label = styled.div`
+    top: 7px;
+    left: 12px;
+    color: #f9d342;
+    font-size: 1rem;
+    margin-bottom: 20px;
+`;
