@@ -11,6 +11,7 @@ export const SkillsContainer = styled.div`
 export const Title = styled.div`
    padding: 20px;
     display: flex;
+    margin-top: 20px;
     justify-content: center;
     align-items: center;
     font-weight: 500;
@@ -26,7 +27,6 @@ export const Title = styled.div`
 
 export const SkillsContentContainer = styled.div`
     flex-direction: column;
-    padding: 20px;
     justify-content: space-around;
     align-items: center;
 `;

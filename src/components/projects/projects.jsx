@@ -18,6 +18,7 @@ import Drink from "./assets/drink-water.png";
 import {
     ProjectsContainer,
     ProjectStyles,
+    ProjectsListContainer,
     Title
 } from "./styles";
 
@@ -62,7 +63,7 @@ const Projects = () => {
             <Navigation/>
             <Title>Projects</Title>
 
-            <ProjectsContainer>
+            <ProjectsListContainer>
                 <ul className="project-list">
                     <ProjectStyles>
                         <List>
@@ -171,7 +172,7 @@ const Projects = () => {
                     </ProjectStyles>
                     
                 </ul>
-            </ProjectsContainer>
+            </ProjectsListContainer>
       </ProjectsContainer>
     );
 }

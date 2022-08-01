@@ -11,6 +11,7 @@ export const AboutMeContainer = styled.div`
 export const Title = styled.div`
     padding: 20px;
     display: flex;
+    margin-top: 20px;
     justify-content: center;
     align-items: center;
     font-weight: 500;
@@ -61,13 +62,11 @@ export const PersonalInfo = styled.div`
             color: #f9d342;
         }
     }
-
-    
 `;
 
 export const DeveloperDescription = styled.div`
     float: right;
-    padding: 20px;
+    padding: 10px;
     width: 40%;
     
     h2 {
