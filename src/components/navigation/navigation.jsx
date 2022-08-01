@@ -13,11 +13,12 @@ import {
 
 const Links = styled(Link)`
     padding: 20px;
+    font-weight: 500;
     color: #292826;
     text-decoration: none;
 
     &:hover {
-        border: #292826 dotted 3px;
+        border-bottom: #292826 dotted 3px;
     }
 `;
 
