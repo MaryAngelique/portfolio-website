@@ -8,7 +8,7 @@ import {
     Title,
     ContactForm,
     Label,
-
+    Button
 } from "./styles"
 
 const InputStyle = {
@@ -84,7 +84,7 @@ const Contact = () => {
                         </div>
                     </ContactForm>
 
-                    <button>Submit</button>
+                    <Button>Submit</Button>
                 </div>
             </ContactContent>
         </ContactContainer>
