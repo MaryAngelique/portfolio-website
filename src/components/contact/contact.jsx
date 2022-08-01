@@ -1,9 +1,16 @@
 import React from "react";
 
+import Navigation from "../navigation/navigation"
+
+import {
+    ContactContainer, ContactContent
+} from "./styles"
+
 const Contact = () => {
     return(
-        <div className="contact-container">
-            <div className="contact-content">
+        <ContactContainer>
+            <Navigation/>
+            <ContactContent>
                 <h3 className="contact-title">Let's Chat!</h3>
 
                 <div className="contact-form-container">
@@ -50,8 +57,8 @@ const Contact = () => {
 
                     <button>Submit</button>
                 </div>
-            </div>
-        </div>
+            </ContactContent>
+        </ContactContainer>
     );
 }
 
