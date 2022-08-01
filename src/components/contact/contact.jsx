@@ -1,4 +1,6 @@
 import React from "react";
+import emailjs from "emailjs-com";
+import { useRef } from "react";
 
 import Navigation from "../navigation/navigation"
 
@@ -32,61 +34,91 @@ const DescriptionStyle = {
 }
 
 const Contact = () => {
+    const form = useRef();
+
+    const sendEmail = (event) => {
+        event.preventDefault();
+
+        emailjs
+        .sendForm(
+            "service_b4qmiqc",
+            "template_h9rzd14",
+            form.current,
+            "user_UHpNJFij8MtQD1aAfs38X"
+        )
+        .then(
+            (result) => {
+                console.log(result.text);
+                alert("SUCCESS!");
+            },
+            (error) => {
+                console.log(error.text);
+                alert("FAILED...", error);
+            }
+        );
+    };
+    
     return(
         <ContactContainer>
             <Navigation/>
-            <ContactContent>
-                <Title>Let's Chat!</Title>
+            <Title>Let's Talk</Title>
 
-                <div className="contact-form-container">
-                    <ContactForm>
-                        <div>
-                            <Label>
-                                Name
-                            
-                                <input
-                                    required
-                                    name="name"
-                                    className="inputName"
-                                    type={"text"}
-                                    style={InputStyle}
-                                />
-                            </Label>
-                        </div>
+            <ContactContent ref={form} onSubmit={sendEmail}>
+                <ContactForm>
+                    <Label for="name">
+                        Name
 
-                        <div>
-                            <Label>
-                                Email
+                        <input
+                        type="name"
+                        name="name"
+                        placeholder="Enter your name here..."
+                        style={InputStyle}
+                        />
+                    </Label>
+                </ContactForm>
 
-                                <input
-                                    required
-                                    name="email"
-                                    className="inputEmail"
-                                    type={"text"}
-                                    style={InputStyle}
-                                />
-                            </Label>
-                        </div>
+                <ContactForm>
+                    <Label for="email">
+                        Email
 
-                        <div>
-                            <Label>
-                                Description
-                           
-                                <textarea
-                                    required
-                                    name="description"
-                                    className="inputDescription"
-                                    type={"text"}
-                                    rows="5"
-                                    style={DescriptionStyle}
-                                />
-                            </Label>
-                        </div>
-                    </ContactForm>
+                        <input
+                            type="email"
+                            name="email"
+                            placeholder="Enter your email here..."
+                            style={InputStyle}
+                        />
+                    </Label>
+                </ContactForm>
 
-                    <Button>Submit</Button>
-                </div>
-            </ContactContent>
+                <ContactForm>
+                    <Label for="subject">
+                        Subject
+                        
+                        <input
+                            type="text"
+                            name="subject"
+                            placeholder="Enter your email subject here..."
+                            style={InputStyle}
+                        />
+                    </Label>
+                </ContactForm>
+
+                <ContactForm>
+                    <Label for="email_body">
+                        Message
+                        <textarea
+                            name="message"
+                            placeholder="Type your message here..."
+                            rows="5"
+                            style={InputStyle}
+                        ></textarea>
+                    </Label>
+                </ContactForm>
+
+                <Button type="submit">
+                    Submit
+                </Button>
+             </ContactContent>
         </ContactContainer>
     );
 }
