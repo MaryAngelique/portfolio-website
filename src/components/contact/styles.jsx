@@ -48,3 +48,17 @@ export const Label = styled.div`
     font-size: 1rem;
     margin-bottom: 20px;
 `;
+
+export const Button = styled.div`
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+    line-height: 1rem;
+    background-color: #f9d342;
+    text-transform: capitalize;
+    color: #292826;
+    flex-grow: 1;
+`;
