@@ -68,6 +68,10 @@ export const PersonalInfo = styled.div`
             color: #f9d342;
         }
     }
+
+    @media screen and (max-width: 800px) {
+        width: 80%;
+    }
 `;
 
 export const DeveloperDescription = styled.div`
@@ -88,5 +92,9 @@ export const DeveloperDescription = styled.div`
         text-align: right;
         font-size: 18px;
         line-height: 1.65;
+    }
+
+    @media screen and (max-width: 800px) {
+        width: 80%;
     }
 `;

@@ -8,7 +8,8 @@ export const NavigationContainer = styled.div`
     justify-content: space-between;
 
     @media screen and (max-width: 800px) {
-        height: 60px;
+        height: 100%;
+        width: 100%;
         padding: 10px 20px;
         margin-bottom: 20px;
     }
@@ -35,5 +36,7 @@ export const NavigationLinks = styled.div`
 
     @media screen and (max-width: 800px) {
         width: 80%;
+        margin-left: 7rem;
+        margin-top: 2rem;
     }
 `;
