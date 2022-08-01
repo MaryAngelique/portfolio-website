@@ -13,6 +13,7 @@ export const ContactContainer = styled.div`
 export const Title = styled.div`
     padding: 20px;
     display: flex;
+    margin-top: 20px;
     justify-content: center;
     align-items: center;
     font-weight: 500;
