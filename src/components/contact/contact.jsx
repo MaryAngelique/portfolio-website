@@ -1,6 +1,4 @@
 import React from "react";
-import emailjs from "emailjs-com";
-import { useRef } from "react";
 
 import Navigation from "../navigation/navigation"
 
@@ -23,10 +21,20 @@ const InputStyle = {
     borderRadius: "10px"
 }
 
+const SubjectStyle = {
+    padding: "10px",
+    lineHeight: 1,
+    marginLeft: "4.3rem",
+    fontSize: "16px",
+    width: "20rem",
+    color: "#292826",
+    borderRadius: "10px"
+}
+
 const DescriptionStyle = {
     padding: "10px",
     lineHeight: 1,
-    marginLeft: "2.5rem",
+    marginLeft: "2.4rem",
     fontSize: "16px",
     width: "20rem",
     color: "#292826",
@@ -34,91 +42,75 @@ const DescriptionStyle = {
 }
 
 const Contact = () => {
-    const form = useRef();
-
-    const sendEmail = (event) => {
-        event.preventDefault();
-
-        emailjs
-        .sendForm(
-            "service_b4qmiqc",
-            "template_h9rzd14",
-            form.current,
-            "user_UHpNJFij8MtQD1aAfs38X"
-        )
-        .then(
-            (result) => {
-                console.log(result.text);
-                alert("SUCCESS!");
-            },
-            (error) => {
-                console.log(error.text);
-                alert("FAILED...", error);
-            }
-        );
-    };
-    
     return(
         <ContactContainer>
             <Navigation/>
-            <Title>Let's Talk</Title>
+            <Title>Let's Chat!</Title>
 
-            <ContactContent ref={form} onSubmit={sendEmail}>
-                <ContactForm>
-                    <Label for="name">
-                        Name
+            <ContactContent>
+                <div className="contact-form-container">
+                    <ContactForm>
+                        <div>
+                            <Label>
+                                Name
+                            
+                                <input
+                                    required
+                                    name="name"
+                                    className="inputName"
+                                    type={"text"}
+                                    style={InputStyle}
+                                />
+                            </Label>
+                        </div>
 
-                        <input
-                        type="name"
-                        name="name"
-                        placeholder="Enter your name here..."
-                        style={InputStyle}
-                        />
-                    </Label>
-                </ContactForm>
+                        <div>
+                            <Label>
+                                Email
 
-                <ContactForm>
-                    <Label for="email">
-                        Email
+                                <input
+                                    required
+                                    name="email"
+                                    className="inputEmail"
+                                    type={"text"}
+                                    style={InputStyle}
+                                />
+                            </Label>
+                        </div>
 
-                        <input
-                            type="email"
-                            name="email"
-                            placeholder="Enter your email here..."
-                            style={InputStyle}
-                        />
-                    </Label>
-                </ContactForm>
+                        <div>
+                            <Label>
+                                Subject
 
-                <ContactForm>
-                    <Label for="subject">
-                        Subject
-                        
-                        <input
-                            type="text"
-                            name="subject"
-                            placeholder="Enter your email subject here..."
-                            style={InputStyle}
-                        />
-                    </Label>
-                </ContactForm>
+                                <input
+                                    required
+                                    name="subject"
+                                    className="inputEmail"
+                                    type={"text"}
+                                    style={SubjectStyle}
+                                />
+                            </Label>
+                        </div>
 
-                <ContactForm>
-                    <Label for="email_body">
-                        Message
-                        <textarea
-                            name="message"
-                            placeholder="Type your message here..."
-                            rows="5"
-                            style={InputStyle}
-                        ></textarea>
-                    </Label>
-                </ContactForm>
+                        <div>
+                            <Label>
+                                Description
+                           
+                                <textarea
+                                    required
+                                    name="description"
+                                    className="inputDescription"
+                                    type={"text"}
+                                    rows="5"
+                                    style={DescriptionStyle}
+                                />
+                            </Label>
+                        </div>
+                    </ContactForm>
 
-                <Button type="submit">
-                    Submit
-                </Button>
-             </ContactContent>
+                    <Button>Submit</Button>
+                </div>
+            </ContactContent>
         </ContactContainer>
     );
 }

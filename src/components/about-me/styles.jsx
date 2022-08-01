@@ -6,6 +6,12 @@ export const AboutMeContainer = styled.div`
     width: 100%;
     justify-content: space-evenly;
     align-content: center;
+
+    @media screen and (max-width: 800px) {
+        height: 60px;
+        padding: 10px 20px;
+        margin-bottom: 20px;
+    }
 `;
 
 export const Title = styled.div`
