@@ -2,6 +2,7 @@ import React from "react";
 import Typical from "react-typical";
 
 import Navigation from "../navigation/navigation";
+import Background from "../../particles/particles";
 
 import { ReactComponent as Angelique } from "../../assets/Angelique.svg";
 
@@ -18,6 +19,7 @@ const Home = () => {
         <HomeContainer>
             <Navigation/>
             <HomeTitle>
+            <Background/>
                 <h2>Hi, I'm <span className="home-name">Angelique <span role="img" aria-label="girl in a computer">👩🏻‍💻</span></span></h2>
                 <h3>
                     <Typical
